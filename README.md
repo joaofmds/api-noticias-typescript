@@ -44,7 +44,7 @@ Antes de começar, certifique-se de ter o seguinte instalado:
 1. Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-projeto.git
+git clone https://github.com/joaofmds/api-noticias-typescript
 cd api-noticias-typescript
 ```
 
