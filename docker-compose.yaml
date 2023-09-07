@@ -1,0 +1,23 @@
+version: "3"
+services:
+  api_dev:
+    image: joaofmds/api-ts
+    ports:
+      - "5000:3050"
+    networks:
+      - api-network
+
+  link-db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+      - "28017:28017"
+    networks:
+      - api-network
+
+  redis:
+    image: redis:latest
+
+networks:
+  api-network:
+    driver: bridge
